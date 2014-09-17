@@ -1,3 +1,7 @@
+
+# return true if an array has two numbers that sum to 0
+# must have 2 zeroes!
+
 def two_sum(nums)
         answer = "true"
         num_of_zeroes = 0
