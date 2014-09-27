@@ -1,11 +1,11 @@
 def no_repeats(year_start, year_end) 
-    no_repeats = []
+    output = []
     
     (year_start..year_end).each do |year|
-        no_repeats << year if no_repeat?(year)
+        output << year if no_repeat?(year)
         end
         
-        no_repeats
+        output
     end
 
 # creating helper function for above function to evaluate if any of the characters in the year are repeating
