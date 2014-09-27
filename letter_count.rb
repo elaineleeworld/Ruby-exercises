@@ -3,11 +3,11 @@ def letter_count(str)
     
     # tally up letters in a string using a hash
     # do not count empty spaces
-     str.each_char do |i|
-         next if i == " "
-     result[i] = 0  unless result.include?(i)
+     str.each_char do |char|
+         next if char == " "
+     result[char] = 0  unless result.include?(char)
 
-     result[i] += 1
+     result[char] += 1
       end  
     
     result
