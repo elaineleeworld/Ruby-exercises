@@ -14,6 +14,7 @@ def ordered_vowel_word?(word)
     letters = word.split("")
     choose_vowels = letters.select {|char| vowels.include?(char)}
 
+    if choose_vowels.length > 1
     (0...choose_vowels.length).each do |i|
         if choose_vowels[i] <= choose_vowels[i+1]
             return true
@@ -21,6 +22,7 @@ def ordered_vowel_word?(word)
             return false
         end
     end
+        return true
 end
 
 #ordered_vowel_word?("hello")
