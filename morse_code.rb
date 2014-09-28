@@ -1,5 +1,6 @@
 def morse_code(str)
-   morsecode = { "a" => "._",
+    result = []
+   morsecode =  { "a" => "._",
     "b" => "_...",
     "c" => "_._.",
     "d" => "_..",
@@ -27,4 +28,12 @@ def morse_code(str)
     "z" => "__.." } 
     
     str.each_char do |char|
-        if char =
+        result << morsecode[char]
+         end
+        p result.join(" ")
+     end
+    
+   
+    morse_code("cat in hat")
+     
+    
