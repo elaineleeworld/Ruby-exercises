@@ -1,6 +1,6 @@
 def palindrome?(string)
     
-    letters = string.split("")
+    letters = string.downcase.split("")
      letters.delete_if {|i| i == " "}
        if letters.reverse == letters
             return true
