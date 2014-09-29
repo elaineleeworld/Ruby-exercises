@@ -1,6 +1,7 @@
 def palindrome?(string)
     
     letters = string.split("")
+     letters.delete_if {|i| i == " "}
        if letters.reverse == letters
             return true
         else
@@ -10,4 +11,4 @@ def palindrome?(string)
     
 end
 
-palindrome?("neveroddoreven") # => true
+palindrome?("Never odd or even") # => true
