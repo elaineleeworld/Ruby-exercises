@@ -1,18 +1,18 @@
 def substrings(string)
     result = []
-    index = 0
+    a = 0
     
-    while index <= string.size
-    z = 0
+    while a <= string.size
+        b = 0
     
-        while z <= string.size
-        result << string[index, z]
-        z +=1
+        while b <= string.size
+            result << string[a, b]
+            b +=1
         end
-    index +=1
+            a +=1
     end
     result.delete("")
- result.uniq
+    result.uniq
  end
  
  p substrings("cat")
