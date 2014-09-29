@@ -11,4 +11,11 @@ def sum_of_cubes(a,b)
     
 sum_of_cubes(3,5)  # => 216  
         
-# sum = 1^3 + 2^3.. + num^3
+# also another way to write
+
+def sum_of_cubes(a, b)
+     
+     (a..b).inject(0) { |sum, x| sum += (x*x*x) }
+end
+
+sum_of_cubes(3,5) # => 216
