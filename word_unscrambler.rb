@@ -7,7 +7,7 @@ def word_unscrambler(word, dictionary)
     dictionary.each do |index|
         s2 = index.split("")
         s2.sort
-        result << s2.join("") if s1.sort == s2.sort
+        result << index if s1.sort == s2.sort
 
     end
     p result
